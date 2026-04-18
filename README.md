@@ -1,4 +1,4 @@
-# google-playstore-analysis
+# Google-Playstore-Analysis
 Exploratory Data Analysis of Google Play Store Apps using Python, SQL, ML and Power BI
 
 # 📱 Google Play Store Apps — Exploratory Data Analysis
