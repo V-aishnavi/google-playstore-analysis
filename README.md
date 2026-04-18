@@ -33,7 +33,6 @@ and 10,346 apps.
 ---
 
 ## 📂 Project Structure
-## 📂 Project Structure
 
 | Folder/File | Description |
 |-------------|-------------|
@@ -169,21 +168,12 @@ Key queries performed in **MySQL Workbench:**
 
 | Model | Accuracy | ROC AUC | CV Mean |
 |---|---|---|---|
-| Logistic Regression |  |  |  |
-| Decision Tree | - | - | - |
-| Random Forest | - | - | - |
-| Gradient Boosting | - | - | - |
-| KNN | - | - | - |
-| SVM | - | - | - |
-
-
- Model  Accuracy  ROC AUC  CV Mean  CV Std
-  Gradient Boosting    0.9598   0.9904   0.9542  0.0140
-      Random Forest    0.9598   0.9893   0.9526  0.0136
-      Decision Tree    0.9433   0.9376   0.9332  0.0217
-Logistic Regression    0.8227   0.9109   0.8301  0.0304
-                KNN    0.7819   0.8289   0.7429  0.0215
-                SVM    0.7813   0.9408   0.7865  0.0277
+| Logistic Regression |  0.8227 |0.9109  | 0.8301   |
+| Decision Tree |0.9433| 0.9376 | 0.9332|
+| Random Forest | 0.9598 | 0.9893 | 0.9526 |
+| Gradient Boosting | 0.9598 |0.9904 |0.9542 |
+| KNN |0.7819 |0.8289 |0.7429 |
+| SVM |0.7813 | 0.9408 | 0.7865|
 
 
 ### Model 3 — Sentiment Analysis (NLP)
@@ -192,12 +182,10 @@ Logistic Regression    0.8227   0.9109   0.8301  0.0304
 
 | Model | Accuracy |
 |---|---|
-| Logistic Regression | - |
-| Naive Bayes | - |
-| Linear SVM | - |
-| Random Forest | - |
-
-> 📝 Fill in your actual model scores from notebook output
+| Logistic Regression | 0.9026 |
+| Naive Bayes | 0.7538 |
+| Linear SVM | 0.9121 |
+| Random Forest |   0.9041 |
 
 ---
 
@@ -231,6 +219,10 @@ Interactive dashboard with **3 pages:**
 
 #### Top Categories by Apps
 ![Categories](images/top_categories.png)
+
+### Free vs Paid 
+![Free vs Paid](images/top_categories.png)
+
 
 #### Correlation Heatmap
 ![Correlation](images/correlation_heatmap.png)
@@ -297,38 +289,6 @@ Interactive dashboard with **3 pages:**
 
 ---
 
-## ⚙️ How to Run
-
-### 1. Clone Repository
-```bash
-git clone https://github.com/YourUsername/google-playstore-analysis.git
-cd google-playstore-analysis
-```
-
-### 2. Install Requirements
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Run Jupyter Notebook
-```bash
-jupyter notebook notebooks/google_playstore_analysis.ipynb
-```
-
-### 4. SQL Setup
-```bash
-# 1. Open MySQL Workbench
-# 2. Create database: CREATE DATABASE playstore_db;
-# 3. Run: sql/playstore_queries.sql
-```
-
-### 5. Power BI Dashboard
-```bash
-# Open powerbi/playstore_dashboard.pbix
-# in Power BI Desktop
-```
-
----
 
 
 
