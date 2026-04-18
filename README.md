@@ -221,7 +221,7 @@ Interactive dashboard with **3 pages:**
 ![Categories](images/top_categories.png)
 
 ### Free vs Paid 
-![Free vs Paid](images/top_categories.png)
+![Free vs Paid](images/free_paid.png)
 
 
 #### Correlation Heatmap
@@ -230,8 +230,6 @@ Interactive dashboard with **3 pages:**
 #### Sentiment Distribution
 ![Sentiment](images/sentiment_distribution.png)
 
-#### ML Model Comparison
-![Models](images/model_comparison.png)
 
 ---
 
