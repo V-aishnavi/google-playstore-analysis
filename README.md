@@ -33,30 +33,18 @@ and 10,346 apps.
 ---
 
 ## 📂 Project Structure
-google-playstore-analysis/
-│
-├── 📂 data/
-│   ├── googleplaystore.csv
-│   ├── googleplaystore_user_reviews.csv
-│   ├── playstore_cleaned.csv
-│   └── reviews_cleaned.csv
-│
-├── 📂 notebooks/
-│   └── google_playstore_analysis.ipynb
-│
-├── 📂 sql/
-│   └── playstore_queries.sql
-│
-├── 📂 powerbi/
-│   └── playstore_dashboard.pbix
-│
-├── 📂 images/
-│   └── (visualization screenshots)
-│
-├── 📄 README.md
-├── 📄 requirements.txt
-└── 📄 .gitignore
+## 📂 Project Structure
 
+| Folder/File | Description |
+|-------------|-------------|
+| `data/` | Raw and cleaned CSV datasets |
+| `notebooks/` | Jupyter notebook with full analysis |
+| `sql/` | SQL queries for database analysis |
+| `powerbi/` | Power BI dashboard file |
+| `images/` | Screenshots of visualizations |
+| `README.md` | Project documentation |
+| `requirements.txt` | Python dependencies |
+| `.gitignore` | Git ignore file |
 ---
 
 ## 📊 Dataset Information
@@ -156,7 +144,7 @@ Key queries performed in **MySQL Workbench:**
 | Query 9 | Most Installed App per Content Rating |
 | Query 10 | Top 10 Most Positive Apps |
 
-📄 See full queries: [`sql/playstore_queries.sql`](sql/playstore_queries.sql)
+📄 See full queries: [`sql/Google play store.sql`](sql/Google play store.sql)
 
 ---
 
@@ -168,12 +156,12 @@ Key queries performed in **MySQL Workbench:**
 
 | Model | R² Score | RMSE | MAE |
 |---|---|---|---|
-| Linear Regression | - | - | - |
-| Ridge Regression | - | - | - |
-| Lasso Regression | - | - | - |
-| Decision Tree | - | - | - |
-| Random Forest | - | - | - |
-| Gradient Boosting | - | - | - |
+| Linear Regression | 0.017 | 0.5221| 0.3584 |
+| Ridge Regression |  0.0176  |0.5221 |0.3584|
+| Lasso Regression |-0.0001 |0.5268 |0.3615 |
+| Decision Tree | -0.7482 | 0.6965 |0.4520 |
+| Random Forest | 0.0915 | 0.5021 | 0.3441 |
+| Gradient Boosting |  0.2232 | 0.4642 | 0.3124 |
 
 ### Model 2 — App Success Classification
 
@@ -181,12 +169,22 @@ Key queries performed in **MySQL Workbench:**
 
 | Model | Accuracy | ROC AUC | CV Mean |
 |---|---|---|---|
-| Logistic Regression | - | - | - |
+| Logistic Regression |  |  |  |
 | Decision Tree | - | - | - |
 | Random Forest | - | - | - |
 | Gradient Boosting | - | - | - |
 | KNN | - | - | - |
 | SVM | - | - | - |
+
+
+ Model  Accuracy  ROC AUC  CV Mean  CV Std
+  Gradient Boosting    0.9598   0.9904   0.9542  0.0140
+      Random Forest    0.9598   0.9893   0.9526  0.0136
+      Decision Tree    0.9433   0.9376   0.9332  0.0217
+Logistic Regression    0.8227   0.9109   0.8301  0.0304
+                KNN    0.7819   0.8289   0.7429  0.0215
+                SVM    0.7813   0.9408   0.7865  0.0277
+
 
 ### Model 3 — Sentiment Analysis (NLP)
 
