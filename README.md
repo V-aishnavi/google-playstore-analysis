@@ -143,7 +143,7 @@ Key queries performed in **MySQL Workbench:**
 | Query 9 | Most Installed App per Content Rating |
 | Query 10 | Top 10 Most Positive Apps |
 
-📄 See full queries: [playstore_queries.sql](https://github.com/YourUsername/google-playstore-analysis/blob/main/sql/playstore_queries.sql)
+📄 See full queries: [playstore_queries.sql](sql/Google play store.sql)
 ---
 
 ## 🤖 Machine Learning Models
